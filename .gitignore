@@ -1,7 +1,22 @@
 # compiled output
 /dist
 /node_modules
-
+node_modules/
+coverage/
+dist/
+.tmp/
+*.log
+*.tgz
+*.yaml
+.idea/
+__snapshots__/
+.awcache/
+logs/
+.DS_Store
+git-version.json
+.vscode/
+*/cdk.out
+.env
 # Logs
 logs
 *.log
