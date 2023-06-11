@@ -4,6 +4,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { join } from 'path';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -13,6 +14,10 @@ import { join } from 'path';
       autoSchemaFile: join(process.cwd(), `src/schema.gql`),
       // this sorts the schema lexicographically
       sortSchema: true,
+    }),
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env.example',
     }),
   ],
   controllers: [AppController],
