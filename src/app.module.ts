@@ -11,6 +11,8 @@ import { join } from 'path';
       driver: ApolloDriver,
       playground: true,
       autoSchemaFile: join(process.cwd(), `src/schema.gql`),
+      // this sorts the schema lexicographically
+      sortSchema: true,
     }),
   ],
   controllers: [AppController],
