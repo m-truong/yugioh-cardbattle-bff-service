@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+// import { AppController } from './app.controller';
+// import { AppService } from './app.service';
 import { join } from 'path';
 import { ConfigModule } from '@nestjs/config';
+import { MonsterCardResolver } from './graphql/schemas/monster-card.resolver';
 
 @Module({
   imports: [
@@ -20,7 +21,9 @@ import { ConfigModule } from '@nestjs/config';
       envFilePath: '.env.example',
     }),
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  // if it's a NestJs project then the provider must be a resolver
+  providers: [MonsterCardResolver],
+  // TODO: next add AuthGuard
 })
 export class AppModule {}
