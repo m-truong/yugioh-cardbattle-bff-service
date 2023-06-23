@@ -1,73 +1,81 @@
+# Yu-Gi-Oh v2.0 Card Battle Game BFF Service 
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://github.com/m-truong/" target="blank">
+    <img src="https://www.konami.com/kde_cms/eu_publish/uploads/EN-and-DE-Resized.png" width="600" alt="Yu-Gi-Oh Trademark Logo" />
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<br>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+---
+
+<br>
+
+## Motivation:
+<p align="">
+  During my GA bootcamp cohort, I worked on Yu-Gi-Oh browser card battle game hosted on this url 
+  <a>https://m-truong.github.io/project_1_marg/#</a>.
+  I've decided to revisit my original project and rebuild it using a microservices approach with a mFE and BFF service layer. This repository is the NestJS/GraphQL backend that'll handle the Yu-Gi-Oh API.
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+---
+## Game Summary:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+  <p align="left">
+    Yu-Gi-Oh! Trading Card Game is a Japanese card battle game where two players draw cards from their respective decks and take turns playing cards on the field. There are Monster, Spell, and Trap type cards, but for my adaptation of the game, I only implemented Monster Cards as a playable feature. At the start of every turn, five monster cards are randomly drawn for each player. A player begins their turn by clicking on the "Begin Attack Phase" button. They then must choose a Monster Card on their side of the field to attack another Monster Card on the opponent's side of the field. After clicking the "Confirm Attack Phase" button, damage dealt to an opponent player's life points is calculated using the Monster Card's Attack Point values.
+  </p>
 
+---
+## Description:
+This is the NestJS/GraphQL backend service that'll support the Angular Yu-Gi-Oh Card Battle Game mFE!
+
+
+---
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ yarn run start
 
 # watch mode
-$ npm run start:dev
+$ yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn run test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ yarn run test:cov
 ```
 
-## Support
+---
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Lessons/Ongoing Issues:
 
-## Stay in touch
+### Planning the scope of projects effectively:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+---
 
-## License
+## List of Errors:
 
-Nest is [MIT licensed](LICENSE).
+**ERROR**:
+
+**RESOLUTION**:
+
+---
