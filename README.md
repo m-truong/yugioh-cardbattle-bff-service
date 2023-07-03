@@ -79,3 +79,8 @@ $ yarn run test:cov
 **RESOLUTION**:
 
 ---
+
+## Sources:
+[Yu-Gi-Oh Deck API](https://ygoprodeck.com/api-guide/)
+
+---

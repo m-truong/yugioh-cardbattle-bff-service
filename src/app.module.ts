@@ -21,7 +21,8 @@ import { MonsterCardResolver } from './graphql/schemas/monster-card.resolver';
       envFilePath: '.env.example',
     }),
   ],
-  controllers: [],
+  // no need for controllers since using resolvers/providers
+  // controllers: [],
   // if it's a NestJs project then the provider must be a resolver
   providers: [MonsterCardResolver],
   // TODO: next add AuthGuard
