@@ -5,7 +5,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 // import { AppService } from './app.service';
 import { join } from 'path';
 import { ConfigModule } from '@nestjs/config';
-import { MonsterCardResolver } from './graphql/schemas/monster-card.resolver';
+import { MonsterCardResolver } from './graphql/monster-card/monster-card.resolver';
 
 @Module({
   imports: [
@@ -18,7 +18,7 @@ import { MonsterCardResolver } from './graphql/schemas/monster-card.resolver';
     }),
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env.example',
+      envFilePath: '.env',
     }),
   ],
   // no need for controllers since using resolvers/providers
