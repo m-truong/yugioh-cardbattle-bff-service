@@ -13,7 +13,8 @@ export class MonsterCardResolver {
   @Query(() => MonsterCard)
   async getMonsterCard() {
     this.logger.verbose('in Query for getMonsterCard');
-    // e.g. return this.monsterCardService.getUser()...
+
+    // await return this.monsterCardService.
   }
 
   @ResolveField()
@@ -24,7 +25,6 @@ export class MonsterCardResolver {
   @ResolveField()
   async monsterType(@Parent() monsterCard: MonsterCard) {
     this.logger.verbose('in ResolveField for monsterType');
-    // TODO: return this.monsterCardService...
   }
 
   // TODO: add Resolver field functions ...
