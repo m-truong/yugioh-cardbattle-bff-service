@@ -4,6 +4,6 @@ import { MonsterCardController } from './monster-card.controller';
 
 @Module({
   controllers: [MonsterCardController],
-  providers: [MonsterCardService]
+  providers: [MonsterCardService],
 })
 export class MonsterCardModule {}

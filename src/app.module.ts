@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MonsterCardModule } from './monster-card/monster-card.module';
 import { MonsterCardController } from './monster-card/monster-card.controller';
+import { MonsterCardService } from './monster-card/monster-card.service';
 
 @Module({
   imports: [
@@ -12,6 +13,6 @@ import { MonsterCardController } from './monster-card/monster-card.controller';
     MonsterCardModule,
   ],
   controllers: [MonsterCardController],
-  providers: [],
+  providers: [MonsterCardService],
 })
 export class AppModule {}

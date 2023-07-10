@@ -1,9 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { MonsterCard } from './entities/monster-card.entity';
 
 @Injectable()
 export class MonsterCardService {
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     constructor() {}
+
+    private readonly monsterCards: MonsterCard[] = [];
 
     findAll() {
         console.log(`This action returns all monsterCards`)

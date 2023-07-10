@@ -1,56 +1,38 @@
-export class MonsterCard {}
+export class MonsterCard {
+    id: string
+    name: string
+    type: string
+    frameType: string
+    desc: string
+    atk: number
+    def: number
+    level: number
+    race: string
+    attribute: string
+    card_sets: Card_Set[]
+    card_images: Card_Image[]
+    card_prices: Card_Price[]
+}
 
-/**
- * {
-      "id": 6983839,
-      "name": "Tornado Dragon",
-      "type": "XYZ Monster",
-      "frameType": "xyz",
-      "desc": "2 Level 4 monsters\nOnce per turn (Quick Effect): You can detach 1 material from this card, then target 1 Spell/Trap on the field; destroy it.",
-      "atk": 2100,
-      "def": 2000,
-      "level": 4,
-      "race": "Wyrm",
-      "attribute": "WIND",
-      "card_sets": [
-        {
-          "set_name": "Battles of Legend: Relentless Revenge",
-          "set_code": "BLRR-EN084",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "4.08"
-        },
-        {
-          "set_name": "Duel Devastator",
-          "set_code": "DUDE-EN019",
-          "set_rarity": "Ultra Rare",
-          "set_rarity_code": "(UR)",
-          "set_price": "1.4"
-        },
-        {
-          "set_name": "Maximum Crisis",
-          "set_code": "MACR-EN081",
-          "set_rarity": "Secret Rare",
-          "set_rarity_code": "(ScR)",
-          "set_price": "4.32"
-        }
-      ],
-      "card_images": [
-        {
-          "id": 6983839,
-          "image_url": "https://images.ygoprodeck.com/images/cards/6983839.jpg",
-          "image_url_small": "https://images.ygoprodeck.com/images/cards_small/6983839.jpg",
-          "image_url_cropped": "https://images.ygoprodeck.com/images/cards_cropped/6983839.jpg"
-        }
-      ],
-      "card_prices": [
-        {
-          "cardmarket_price": "0.42",
-          "tcgplayer_price": "0.48",
-          "ebay_price": "2.99",
-          "amazon_price": "0.77",
-          "coolstuffinc_price": "0.99"
-        }
-      ]
-    }
- */
+export interface Card_Set {
+    set_name: string
+    set_code: string
+    set_rarity: string
+    set_rarity_code: string
+    set_price: string
+}
+
+export interface Card_Image {
+    id: number
+    image_url: string
+    image_url_small: string
+    image_url_cropped: string
+}
+
+export interface Card_Price {
+    cardmarket_price: string
+    tcgplayer_price: string
+    ebay_price: string
+    amazon_price: string
+    coolstuffinc_price: string
+}
