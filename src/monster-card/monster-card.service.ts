@@ -1,18 +1,20 @@
-import { Injectable } from '@nestjs/common';
-import { MonsterCard } from './entities/monster-card.entity';
+import { Injectable } from '@nestjs/common'
+import { MonsterCard } from './entities/monster-card.entity'
+import { HttpService } from '@nestjs/axios'
+import { Observable } from 'rxjs'
+import { AxiosResponse } from 'axios'
 
 @Injectable()
 export class MonsterCardService {
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
-    constructor() {}
+    constructor(private readonly httpService: HttpService) {}
 
-    private readonly monsterCards: MonsterCard[] = [];
+    private readonly monsterCards: MonsterCard[] = []
 
-    findAll() {
+    findAll(): Observable<AxiosResponse<MonsterCard[]>> {
         console.log(`This action returns all monsterCards`)
-        // TODO: make an API fetch request to the yugioh pro-deck
-        // https://db.ygoprodeck.com/api/v7/cardinfo.php
-        // return this.axios.get()
+        return this.httpService.get(
+            'https://db.ygoprodeck.com/api/v7/cardinfo.php'
+        )
     }
 
     findOneMonsterCardByName(name: string) {
